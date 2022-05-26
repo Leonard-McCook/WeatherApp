@@ -24,13 +24,13 @@ locationBtn.addEventListener("click", () =>{
 });
 
 function requestApi(city){
-    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=af7b3f83963728836417b8422f747ef0`;
+    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=`;
     fetchData();
 }
 
 function onSuccess(position){
     const {latitude, longitude} = position.coords;
-    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=af7b3f83963728836417b8422f747ef0`;
+    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=`;
     fetchData();
 }
 
